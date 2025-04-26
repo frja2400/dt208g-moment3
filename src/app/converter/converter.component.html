@@ -1,4 +1,4 @@
-<h2>Kalkylator</h2>
+<h2>Omvandla Celsius till Fahrenheit och vice versa</h2>
 
 <div class="converterContainer">
     <label for="celsius">Celsius:</label><br>
@@ -16,5 +16,19 @@
 
 <div>
     <!--Data-binding-->
-    <p>Resultat: {{ result }}</p>
+    <p>Resultat: {{ resultTempText }}</p>
+</div>
+
+<h2>Omvandla Meter till Fot och vice versa</h2>
+<div class="converterContainer">
+    <label for="meter">Meter:</label><br>
+    <input type="number" id="meter" [(ngModel)]="meterValue"><br>
+    <button (click)="convertToFeet()">METER -> FOT</button><br>
+
+    <label for="feet">Fot:</label><br>
+    <input type="number" id="feet" [(ngModel)]="feetValue"><br>
+    <button (click)="convertToMeter()">FOT -> METER</button><br>
+</div>
+<div>
+    <p>Resultat: {{ resultLengthText }}</p>
 </div>

@@ -8,17 +8,35 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './converter.component.css'
 })
 export class ConverterComponent {
-  //Egenskaper av klassen ConverterComponent
+  //Egenskaper
   celsiusValue: number = 0;
   fahrenheitValue: number = 0;
-  result: number = 0;
+  resultTemp: number = 0;
+  resultTempText: string = '';
+  meterValue: number = 0;
+  feetValue: number = 0;
+  resultLength: number = 0;
+  resultLengthText: string = '';
 
   //Metoder
   convertToFahrenheit(): void {
-    this.result = (this.celsiusValue * 9 / 5) + 32;
+    this.resultTemp = (this.celsiusValue * 9 / 5) + 32;
+    //Skriver ut resultatet och avrundar till två decimaler.
+    this.resultTempText = `${this.celsiusValue} celsius är ${this.resultTemp.toFixed(2)} fahrenheit`;
   }
 
   convertToCelsius(): void {
-    this.result = (this.fahrenheitValue - 32) * 5 / 9;
+    this.resultTemp = (this.fahrenheitValue - 32) * 5 / 9;
+    this.resultTempText = `${this.fahrenheitValue} fahrenheit är ${this.resultTemp.toFixed(2)} celsius`;
+  }
+
+  convertToFeet(): void {
+    this.resultLength = this.meterValue * 3.28084;
+    this.resultLengthText = `${this.meterValue} meter är ${this.resultLength.toFixed(2)} fot`;
+  }
+
+  convertToMeter(): void {
+    this.resultLength = this.feetValue / 3.28084;
+    this.resultLengthText = `${this.feetValue} fot är ${this.resultLength.toFixed(2)} meter`;
   }
 }
