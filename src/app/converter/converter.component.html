@@ -1,1 +1,20 @@
-<p>converter works!</p>
+<h2>Kalkylator</h2>
+
+<div class="converterContainer">
+    <label for="celsius">Celsius:</label><br>
+    <!--Tvåvägs data-binding-->
+    <input type="number" id="celsius" [(ngModel)]="celsiusValue"><br>
+    <!--Anropa funktionerna från klassen-->
+    <button (click)="convertToFahrenheit()">CELSIUS -> FAHRENHEIT</button><br>
+
+    <label for="fahrenheit">Fahrenheit:</label><br>
+    <!--Tvåvägs data-binding-->
+    <input type="number" id="fahrenheit" [(ngModel)]="fahrenheitValue"><br>
+    <!--Anropa funktionerna från klassen-->
+    <button (click)="convertToCelsius()">FAHRENHEIT -> CELSIUS</button><br>
+</div>
+
+<div>
+    <!--Data-binding-->
+    <p>Resultat: {{ result }}</p>
+</div>
