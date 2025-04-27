@@ -12,9 +12,6 @@
     <input type="number" id="fahrenheit" [(ngModel)]="fahrenheitValue">
     <!--Anropa funktionerna från klassen-->
     <button (click)="convertToCelsius()">FAHRENHEIT → CELSIUS</button><br>
-</div>
-
-<div>
     <!--Data-binding-->
     <p>Resultat: {{ resultTempText }}</p>
 </div>
@@ -28,7 +25,5 @@
     <label for="feet">Fot:</label><br>
     <input type="number" id="feet" [(ngModel)]="feetValue">
     <button (click)="convertToMeter()">FOT → METER</button><br>
-</div>
-<div>
     <p>Resultat: {{ resultLengthText }}</p>
 </div>
