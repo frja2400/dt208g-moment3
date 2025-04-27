@@ -1,7 +1,10 @@
 .profile {
-    width: 100%;
+    width: 80%;
+    border-radius: 50%;
+    margin-top: 40px;
 }
 
 .imageContainer {
-    width: 500px;
+    display: flex;
+    justify-content: center;
 }
