@@ -22,12 +22,12 @@ export class ConverterComponent {
   convertToFahrenheit(): void {
     this.resultTemp = (this.celsiusValue * 9 / 5) + 32;
     //Skriver ut resultatet och avrundar till två decimaler.
-    this.resultTempText = `${this.celsiusValue} celsius är ${this.resultTemp.toFixed(2)} fahrenheit`;
+    this.resultTempText = `${this.celsiusValue} grader celsius är ${this.resultTemp.toFixed(2)} grader fahrenheit`;
   }
 
   convertToCelsius(): void {
     this.resultTemp = (this.fahrenheitValue - 32) * 5 / 9;
-    this.resultTempText = `${this.fahrenheitValue} fahrenheit är ${this.resultTemp.toFixed(2)} celsius`;
+    this.resultTempText = `${this.fahrenheitValue} grader fahrenheit är ${this.resultTemp.toFixed(2)} grader celsius`;
   }
 
   convertToFeet(): void {

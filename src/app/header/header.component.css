@@ -8,7 +8,7 @@ nav ul {
 
 nav li {
     margin: 0 auto;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 nav a {
@@ -26,6 +26,9 @@ h1 {
 header {
     background: linear-gradient(135deg, #dd0031, #c2185b, #512da8);
     border-radius: 60px;
+    width: 90%;
+    max-width: 650px;
+    margin: 0 auto;
 }
 
 li a.active {

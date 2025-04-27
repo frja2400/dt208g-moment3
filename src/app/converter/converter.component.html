@@ -3,15 +3,15 @@
 <div class="converterContainer">
     <label for="celsius">Celsius:</label><br>
     <!--Tvåvägs data-binding-->
-    <input type="number" id="celsius" [(ngModel)]="celsiusValue"><br>
+    <input type="number" id="celsius" [(ngModel)]="celsiusValue">
     <!--Anropa funktionerna från klassen-->
-    <button (click)="convertToFahrenheit()">CELSIUS -> FAHRENHEIT</button><br>
+    <button (click)="convertToFahrenheit()">CELSIUS → FAHRENHEIT</button><br>
 
     <label for="fahrenheit">Fahrenheit:</label><br>
     <!--Tvåvägs data-binding-->
-    <input type="number" id="fahrenheit" [(ngModel)]="fahrenheitValue"><br>
+    <input type="number" id="fahrenheit" [(ngModel)]="fahrenheitValue">
     <!--Anropa funktionerna från klassen-->
-    <button (click)="convertToCelsius()">FAHRENHEIT -> CELSIUS</button><br>
+    <button (click)="convertToCelsius()">FAHRENHEIT → CELSIUS</button><br>
 </div>
 
 <div>
@@ -22,12 +22,12 @@
 <h2>Omvandla Meter & Fot</h2>
 <div class="converterContainer">
     <label for="meter">Meter:</label><br>
-    <input type="number" id="meter" [(ngModel)]="meterValue"><br>
-    <button (click)="convertToFeet()">METER -> FOT</button><br>
+    <input type="number" id="meter" [(ngModel)]="meterValue">
+    <button (click)="convertToFeet()">METER → FOT</button><br>
 
     <label for="feet">Fot:</label><br>
-    <input type="number" id="feet" [(ngModel)]="feetValue"><br>
-    <button (click)="convertToMeter()">FOT -> METER</button><br>
+    <input type="number" id="feet" [(ngModel)]="feetValue">
+    <button (click)="convertToMeter()">FOT → METER</button><br>
 </div>
 <div>
     <p>Resultat: {{ resultLengthText }}</p>

@@ -1,7 +1,6 @@
 main {
-    flex: 1;
     width: 90%;
-    max-width: 650px;
+    max-width: 600px;
     margin: 2% auto;
     box-sizing: border-box;
     overflow: hidden;
